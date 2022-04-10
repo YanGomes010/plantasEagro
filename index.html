@@ -9,6 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plant deck</title>
     <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        a:hover {
+            color: inherit;
+        }
+        
         @media screen and (max-width:1000px) {
             .deck-cards {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -21,6 +30,13 @@
             }
             .deck-cards {
                 grid-template-columns: 1fr 1fr;
+            }
+            .sec-box-content {
+                flex-direction: column;
+            }
+            .art-img-milho {
+                margin-bottom: 22px;
+                margin-top: 22px
             }
         }
         
@@ -46,11 +62,13 @@
 
 <body>
     <div class="container w-100 ">
-        <header class="d-flex justify-content-center " style="background-color: green; ">
+        <header class="d-flex justify-content-center " style="background-color: #008000; ">
             <div class="box-header w-100 d-flex text-center justify-content-between text-light " style="font-family: 'Poppins', sans-serif; font-style:inherit; ">
                 <h2 class="plantdeck" style="margin-left: 25px; ">Plant deck</h2>
                 <div class="home mt-2" style="margin-right: 15px;">
-                    <h5>Home</h5>
+                    <a href="./index.html">
+                        <h5>Home</h5>
+                    </a>
                 </div>
                 <section class="menu-right">
                     <input class="inpt" id="ipt-hbm" type="checkbox">
@@ -71,12 +89,14 @@
             </div>
         </header>
         <main>
-            <div class="deck-cards ">
-                <article class="card-plant ">
-                    <h3 style="font-family: 'Poppins', sans-serif; ">Milho</h3>
-                    <img class="mb-5 milho" src="./images/milho.png" alt=" ">
-                    <button class="btn text-light " style="font-family: 'Poppins', sans-serif ; ">Ler Mais</button>
-                </article>
+            <div class="deck-cards">
+                <a href="./Plants/milho.html">
+                    <article class="card-plant ">
+                        <h3 style="font-family: 'Poppins', sans-serif;">Milho</h3>
+                        <img class="mb-5 milho" src="./images/milho.png" alt=" ">
+                        <button class="btn text-light" style="font-family: 'Poppins', sans-serif ; ">Ler Mais</button>
+                    </article>
+                </a>
                 <article class="card-plant ">
                     <h3 style="font-family: 'Poppins', sans-serif; ">Soja</h3>
                     <img class="mb-5 img-commodities " src="./images/imagens-soja.png " alt=" ">

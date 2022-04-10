@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body {
+    background-color: rgb(181, 181, 181);
+    user-select: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #f0f0f0;
+}
+
+.deck-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.card-plant {
+    border: none;
+    border-radius: 10px;
+    padding: 24px;
+    width: 200px;
+    height: 240px;
+    box-shadow: -5px 5px 5px rgb(0 0 0 / 30%);
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.card-plant:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.img-commodities {
+    width: 100px;
+    height: 100px;
+}
+
+.milho {
+    width: 100px;
+    height: 69px;
+}
+
+.btn {
+    background-color: #277b10;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+/* MENU */
+
+.menu-options {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    left: -100%;
+    background: #008000;
+    transition: all 0.5s;
+}
+
+.inpt:checked~.menu-box-complet .menu-options {
+    transform: translateX(100%);
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+.menu-span {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-right {
+    display: none;
+}
+
+.hamburguer {
+    position: relative;
+    display: none;
+    background: rgb(82, 226, 63);
+    width: 25px;
+    height: 4px;
+    top: 22px;
+    left: 3px;
+    border-radius: 190px;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: rgb(82, 226, 63);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -5px;
+    width: 85%;
+    border-radius: 190px;
+}
+
+.hamburguer:after {
+    width: 75%;
+    bottom: -5px;
+    border-radius: 190px;
+}
+
+input {
+    display: none;
+}
+
+#ipt-hbm:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+#ipt-hbm:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+    display: none;
+}
+
+#ipt-hbm:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* CARD ABERTO DE CARACTERISTICAS */
+
+.main-card-open {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.title-card-open {
+    font-size: 25px;
+    font-family: "Poppins', sans-serif";
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.p-card-open {
+    font-family: "Poppins', sans-serif";
+    font-size: 20px;
+}
+
+.btn-close:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}

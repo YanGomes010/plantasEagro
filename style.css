@@ -52,8 +52,8 @@ main {
     height: 69px;
 }
 
-.btn {
-    background-color: #277b10;
+.btn-cards {
+    background-color: #3caa1d;
 }
 
 .btn:focus {

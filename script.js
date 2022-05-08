@@ -129,7 +129,7 @@ function createAlface() {
 
 function createBatataDoce() {
     var batataDoce = document.createElement("a")
-    batataDoce.href = "Plants/batatDoce.html"
+    batataDoce.href = "Plants/batatdoce.html"
     var articlebatataDoce = document.createElement("article");
     articlebatataDoce.classList.add("card-plant")
     var H4batataDoce = document.createElement("h4")
